@@ -1,0 +1,57 @@
+# calculator-
+def add(a,b):
+    return a+b;
+def sub(a,b):
+    return a-b;
+def multi(a,b):
+    return a*b;
+def divide(a,b):
+    return a/b;
+def power(a,b):
+    return pow(a,b);
+#select the choice
+while True:
+
+    print("Select the choice")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiple")
+    print("4.Divide")
+    print("5.Power")
+    print("Select the number 1/2/3/4/5")
+    choice = input("Enter your choice:")
+
+    num1 = int(input("Enter a first number:/n"))
+    num2 = int(input("Enter a second number:/n"))
+
+    if choice == "1":
+        print(num1, "+", num2, "=", add(num1, num2))
+
+    elif choice == "2":
+        print(num1, "_", num2, "=", sub(num1, num2))
+    elif choice == "3":
+        print(num1, "*", num2, "=", multi(num1, num2))
+
+    elif choice == "4":
+        print(num1, "/", num2, "=", divide(num1, num2))
+
+    elif choice == "5":
+        print(num1, "^", num2, "=", power(num1, num2))
+
+    else:
+        print("invalid entry:")
+        break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
